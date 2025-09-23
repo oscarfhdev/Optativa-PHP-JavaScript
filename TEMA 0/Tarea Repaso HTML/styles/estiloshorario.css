@@ -1,0 +1,66 @@
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    height: 70vh;
+}
+
+h1{
+    text-align: center;
+}
+
+th{
+    background-color: lightblue;
+}
+
+.dia{
+    background-color: cadetblue;
+}
+
+.hora{
+    background-color: lightskyblue;
+}
+
+.recreo{
+    background-color: yellowgreen;
+}
+
+.opt{
+    background-color: antiquewhite;
+}
+
+.pro{
+    background-color: lightcyan;
+}
+
+.aad{
+    background-color: lightpink;
+}
+
+.sge{
+    background-color: darkolivegreen;
+}
+
+.pmd{
+    background-color: darkgoldenrod;
+}
+
+.din{
+    background-color: rgb(123, 85, 150);
+}
+
+.psp{
+    background-color: aquamarine;
+}
+
+.ipe{
+    background-color: coral;
+}
+
+.ing{
+    background-color: grey;
+}

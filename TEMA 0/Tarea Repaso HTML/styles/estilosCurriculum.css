@@ -1,0 +1,14 @@
+body{
+    background-color: lightblue;
+    display: grid;
+    grid-template-areas: "header header header",
+    "fotoinfo trayectoria titulos";
+}
+
+#fotoinfo{
+    grid-area: "fotoinfo";
+}
+
+#trayectoria{
+    grid-area: "trayectoria";
+}
