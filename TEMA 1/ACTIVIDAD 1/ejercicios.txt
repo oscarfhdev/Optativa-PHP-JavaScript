@@ -1,0 +1,14 @@
+Realiza los siguientes ejercicios utilizando JavaScript:
+
+
+1 - Crear una web que llame a un script de javaScript que dibuje una tabla de dos fila y una columna.
+
+2 - Modificar el ejercicio anterior para que el script contenga una variable de cadena de caracteres que guarde la cadena necesaria para darle color de fuente azul y tamaño 12 pto a la tabla del ejercicio anterior.
+
+3- Crear una web que tenga dos cuadros de texto y un botón y hacer un script de javaScript para que cuando hagamos click sobre él se muestre con la función alert la suma de lo escrito en ambos cuadros de texto.
+
+4 - Modificar el ejercicio anterior para que en lugar del alert con la función innerHTML se muestre en una tabla el contenido de cada cuadro de texto
+
+5 - Crear una web que tenga una imagen insertada. Incluirle a dicha web un script que cambie los valores de ancho y alto de esta imagen para que tenga un tamaño de 100x100
+
+6 - Modificar el ejercicio anterior para incluir dos cuadros de texto en los que se puedan poner los valores para el ancho y alto de la imagen. Incluir también un botón para que cuando lo pulsemos se redimensione la imagen a los valores introducidos en los cuadros de texto.
