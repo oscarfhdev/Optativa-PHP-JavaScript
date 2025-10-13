@@ -3,8 +3,6 @@ h1, p{
 }
 
 table, td, th{
-    border-collapse: collapse;
-    border: 1px solid black;
     padding: 1vh;
 }
 
@@ -17,4 +15,13 @@ button{
     padding: 1vh;
     font-weight: bold;
     border-radius: 1vh;
+}
+
+#tablaPersonalizada{
+    border-collapse: collapse;
+}
+
+#tablaPersonalizada td{
+    border: 1px solid black;
+    color: blue;
 }
