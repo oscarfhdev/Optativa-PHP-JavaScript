@@ -1,0 +1,48 @@
+h1, p{
+    color: cornflowerblue;
+}
+
+table, td, th{
+    padding: 1vh;
+}
+
+div{
+    padding: 1vw;
+}
+
+button{
+    background-color: lightskyblue;
+    padding: 1vh;
+    font-weight: bold;
+    border-radius: 1vh;
+}
+
+#tablaPersonalizada{
+    border-collapse: collapse;
+}
+
+#tablaPersonalizada td{
+    border: 1px solid black;
+    color: blue;
+    font-size: 12px;
+}
+
+input{
+    padding: 1vh;
+    background-color: lightcyan;
+    border-radius: 1vh;
+}
+
+#tablaFormal{
+    border-collapse: collapse;
+}
+
+#tablaFormal td{
+    border: 1px solid black;
+}
+
+#img1{
+    width: 700px;            /* valor inicial explícito */
+    height: 500px;
+    transition: all 0.10s ease;
+}
