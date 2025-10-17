@@ -1,0 +1,20 @@
+h1, p{
+    color: cornflowerblue;
+}
+
+div{
+    padding: 1vw;
+}
+
+input{
+    padding: 1vh;
+    background-color: lightcyan;
+    border-radius: 1vh;
+}
+
+button{
+    background-color: lightskyblue;
+    padding: 1vh;
+    font-weight: bold;
+    border-radius: 1vh;
+}
