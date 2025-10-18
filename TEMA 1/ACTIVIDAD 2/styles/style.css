@@ -18,3 +18,9 @@ button{
     font-weight: bold;
     border-radius: 1vh;
 }
+
+#img1, #img2{
+    width: 300px;
+    border: 2px solid gold;
+    border-radius: 1vw;
+}
