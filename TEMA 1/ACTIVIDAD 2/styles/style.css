@@ -34,3 +34,8 @@ td{
     border: 1px solid darkcyan ;
     padding: 1vw;
 }
+
+.advertencia{
+    color: red;
+    visibility: hidden;
+}

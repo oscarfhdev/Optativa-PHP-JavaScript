@@ -11,11 +11,12 @@
         <h1>Ejercicio 3</h1>
         <p>3 - Modificar el ejercicio anterior y añadir un botón que sirva para poder borrar todos los contenidos de los cuadros de texto de golpe. Usad un bucle y la función getElementsByTagName().</p>
 
+        <!-- Utilizamos los eventos onfocus(enfocado) y onblur(cuando quitamos el foco)-->
         <input type="text" placeholder="Pincha aquí" onfocus="enfocar(this)" onblur="desenfocar(this)">
         <input type="text" placeholder="Pincha aquí" onfocus="enfocar(this)" onblur="desenfocar(this)">
         <input type="text" placeholder="Pincha aquí" onfocus="enfocar(this)" onblur="desenfocar(this)">
 
-        <button onclick="borrarContenidoInput()">Borrar contenido</button>
+        <button onclick="borrarContenidoInput()">Borrar contenido</button> // Al pulsar al botón llamamos al método
 
     
         <script src="./js/script3.js"></script>
