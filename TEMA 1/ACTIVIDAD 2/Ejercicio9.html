@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 9</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 9</h1>
+        <p>9 - Modificar el ejercicio anterior para que aparte de mostrar el fondo en rojo también muestre al lado del cuadro el texto “El campo es requerido o es un número”</p>
+
+        <div id="wrapper">
+            <form action="">
+                <!-- Los elementos <p> de la clase advertencia está por defecto ocultos-->
+                <input type="text" class="campo" placeholder="Introduce texto"/>
+                <p class="advertencia">El campo es requerido o es un número</p>
+
+                <input type="text" class="campo" placeholder="Introduce texto"/>
+                <p class="advertencia">El campo es requerido o es un número</p>
+
+                <input type="text" class="campo" placeholder="Introduce texto"/>
+                <p class="advertencia">El campo es requerido o es un número</p>
+
+                <input type="text" class="campo" placeholder="Introduce texto"/>
+                <p class="advertencia">El campo es requerido o es un número</p>
+
+                <button type="button" onclick="comprobarInputs()">Comprobar</button>
+            </form>
+        </div>
+
+        <script src="./js/script9.js"></script>
+    </body>
+</html>
