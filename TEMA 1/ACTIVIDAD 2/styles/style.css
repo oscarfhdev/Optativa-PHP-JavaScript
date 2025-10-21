@@ -23,6 +23,7 @@ button{
     width: 300px;
     border: 2px solid gold;
     border-radius: 1vw;
+    height: auto;
 }
 
 table{
@@ -38,4 +39,10 @@ td{
 .advertencia{
     color: red;
     visibility: hidden;
+}
+
+img{
+    width: 300px;
+    height: 150px;
+    margin: 2vh;
 }
