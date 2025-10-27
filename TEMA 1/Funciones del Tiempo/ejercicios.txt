@@ -1,0 +1,21 @@
+Realiza los diferentes scripts para resolver los siguientes problemas:
+
+1 - Mediante las función setInterval crear una web que permita saber en cada momento cuantos segundos lleva la página abierta. Se mostrará un contador en la parte inferior derecha del navegador en un div lo suficientemente visible.
+
+2 - Modifica el ejercicio anterior para que también nos diga los minutos que llevamos con la página abierta.
+
+3 - Modifica el ejercicio anterior para que a los 2 minutos nos redirija a la web de nuestro centro.
+
+4 - Crear una web que muestre un gif animado (cógelo de la galería de google) durante 5 segundos. Pasado ese tiempo ocultará dicho gif y mostrará una tabla de 5 filas y 5 que se creará dinámicamente.
+
+5 - Modificar el ejercicio anterior para que durante los 5 segundos que está el gif mostrándose se mueva de izquierda a derecha de la pantalla de 10 en 10 pixel en intervalos de tiempo de 100 milisegundos.
+
+6 - Implementar una web que haga las funciones de un cronómetro. Se añadirá un botón desde el que poder iniciar o reanudar el cronómetro, otro botón para parar el cronómetro otro para resetear los valores y ponerlos a 0.
+
+7 - Modificar el ejercicio anterior para que cada vez que se pare el cronómetro se vayan guardando en un div los tiempos de parada.
+
+8 - Implementar una web que tenga un banner que ocupe todo el ancho de la pantalla salvo un margen del 10% en cada lado. Dicho banner irá intercambiando entre cuatro imágenes cuyas rutas estarán almacenadas en un array. El intercambio se hará secuencialmente cada 3 segundos.
+
+9 - Modificar el ejercicio anterior para que si alguien hace click sobre el banner se pare la secuencia de intercambio.
+
+10 - Implementar el funcionamiento de un semáforo en javascript mediante las funciones de tiempo. Podéis utilizar tres imágenes que se vayan intercambiando secuencialmente.

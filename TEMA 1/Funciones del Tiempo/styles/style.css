@@ -1,0 +1,16 @@
+h1, p{
+    color: cornflowerblue;
+}
+
+div{
+    padding: 1vw;
+}
+
+#abajo-derecha{
+    position: fixed;
+    bottom: 10px;   /* distancia desde abajo */
+    right: 10px;     /* distancia desde la izquierda */
+    background-color: lightcyan;
+    padding: 1vw;
+    border-radius: 1vw;
+}
