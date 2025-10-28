@@ -14,3 +14,13 @@ div{
     padding: 1vw;
     border-radius: 1vw;
 }
+
+table{
+    margin: 2vh 0;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid darkcyan ;
+    padding: 1vw;
+}
