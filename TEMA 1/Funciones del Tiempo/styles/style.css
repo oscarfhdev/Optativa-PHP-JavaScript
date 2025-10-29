@@ -35,3 +35,19 @@ button{
 #log p{
     color: brown;
 }
+
+#principal{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%; 
+    height: 100%;
+    justify-content: center;
+}
+
+#banner{
+    width: 80%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
