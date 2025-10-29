@@ -4,7 +4,7 @@ indice=0;
 function cambiarBanner(){
     imagen=document.getElementById("banner");
 
-    if(indice==2){
+    if(indice==3){
         indice=0;
         imagen.src=listaBanners[indice];
     }
