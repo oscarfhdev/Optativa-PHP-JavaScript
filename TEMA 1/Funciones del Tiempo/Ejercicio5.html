@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 5</title>
+    </head>
+
+    <body onload="setInterval(sumarSegundos, 1000)"> <!-- Función que se llamará cada 1 segundo al cargar HTML-->
+        <h1>Ejercicio 5</h1>
+        <p>5 - Modificar el ejercicio anterior para que durante los 5 segundos que está el gif mostrándose se mueva de izquierda a derecha de la pantalla de 10 en 10 pixel en intervalos de tiempo de 100 milisegundos.</p>
+
+        <div id="principal">
+            <img id="gif1" src="./images/goku.gif" alt="goku" height="400px"/> <!-- Le asignamos un id al gif para ocultarlo más fácilmente-->
+
+        </div>
+
+        <div id="abajo-derecha">
+            <h2 id="segundos"></h2>
+        </div>
+    
+        <script src="./js/script5.js"></script>
+    </body>
+</html>
