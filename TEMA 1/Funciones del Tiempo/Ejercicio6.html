@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 6</title>
+    </head>
+
+    <body onload="setInterval(sumarSegundos, 10)"> <!-- Función que se llamará cada 10ms segundo al cargar HTML-->
+        <h1>Ejercicio 6</h1>
+        <p>6 - Implementar una web que haga las funciones de un cronómetro. Se añadirá un botón desde el que poder iniciar o reanudar el cronómetro, otro botón para parar el cronómetro otro para resetear los valores y ponerlos a 0.</p>
+
+        <div id="principal">
+            <button onclick="iniciarCronometro()">Iniciar cronómetro</button>
+            <button onclick="pararCronometro()">Parar cronómetro</button>
+            <button onclick="reiniciarCronometro()">Reiniciar cronómetro</button>
+            <h2 id="segundos"></h2>
+
+        </div>
+    
+        <script src="./js/script6.js"></script>
+    </body>
+</html>
