@@ -1,21 +1,20 @@
-// Creamos las variables fuera de la función
-const listaBanners =["./images/banner1.png","./images/banner2.jpg","./images/banner3.jpg", "./images/banner4.jpg"] // Array con ruta a las imágenes
+const listaSemaforos = ["./images/semaforo_rojo.png","./images/semaforo_amarillo.png", "./images/semaforo_verde.png"]
 let indice = 0;
 let movimiento = true; // Añadimos el boolean para para el carrusel
 
 
 function cambiarBanner(){
     if(movimiento == true){ // Aquí comprobamos la variable
-        imagen=document.getElementById("banner"); // Obtenemos el banner por id
+        imagen=document.getElementById("semaforo"); // Obtenemos el banner por id
 
         // Si llega al final se reinicia
-        if(indice==3){
+        if(indice==2){
             indice=0;
-            imagen.src=listaBanners[indice];
+            imagen.src=listaSemaforos[indice];
         }
         else{ // Sino sigue aumentando hasta que llegue al final
             indice++;
-            imagen.src=listaBanners[indice];
+            imagen.src=listaSemaforos[indice];
         }
     }
 }
@@ -25,6 +24,10 @@ function pararCarrusel(){
     if(movimiento != false){
         movimiento = false; // Ponemos la variable en false
         console.log('carrusel parado')
+    }
+
+    else{
+        movimiento = true; // Se renauda
     }
     
 }
