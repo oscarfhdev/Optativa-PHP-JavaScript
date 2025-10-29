@@ -31,3 +31,7 @@ button{
     font-weight: bold;
     border-radius: 1vh;
 }
+
+#log p{
+    color: brown;
+}
