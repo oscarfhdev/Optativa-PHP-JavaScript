@@ -8,7 +8,7 @@ const gif = document.getElementById('gif1');
 // Esta función solo se llama si han pasado 5 segundos
 function ocultarDivYGenerearTabla(){
     // Obtenemos los elementos como el div principal
-    const divPrincipal = document.getElementById('principal');
+    const divPrincipal = document.getElementById('principal2');
 
     const tabla = document.createElement('table'); // Creamos un elemento tabla
 
