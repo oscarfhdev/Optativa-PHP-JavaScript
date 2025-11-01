@@ -1,0 +1,28 @@
+Realiza los siguientes ejercicios utilizando las clases y objetos de JavaScript:
+
+1 - Define un objeto que sea un alumno para guardar sus calificaciones, los módulos que tienen que tener son DIN, AaD, Opt, IPE e Inglés, en la salida tenemos que devolver el nombre del alumno, las diferentes calificaciones y la media.
+
+2 - Modifica el ejercicio anterior una clase alumno para el problema antes descrito.
+
+3 - Crea una clase llamada curso, la clase contiene en nombre del curso, el aula y un array de alumnos con sus calificaciones.  Crea un método para mostrar todos los alumnos del curso.
+
+4 - Añade al ejercicio anterior un método para buscar dentro del array de alumnos por un alumno en concreto y que muestre sus calificaciones.
+
+5 - Define un objeto, mediante una expresión, que tenga dos propiedades: precio y descuento y un método neto que devuelve el valor del objeto con el descuento aplicado. El método calculará el precio con el descuento aplicado. Los valores se pedirán por teclado.
+
+6 - Define un objeto constructor que sea un cliente, este cliente tiene un nombre y un saldo bancario (variables privadas), crea los métodos ingreso, retirada y consultar para añadir, retirar o consultar el estado de las cuentas.
+    • Crea una clase Ficha, con su constructor, que se usará para almacenar el número de kilómetros recorridos por una persona en cada sesión de ejercicios. Las propiedades de la clase serán: nombre de la persona, distancia, un array con la distancia de cada una de las sesiones. Hay que implementar dos métodos, anotar: anota los kilómetros en el array y media: calcula la media de kilómetros recorridos
+
+7 - Crea una clase que llamaremos Bus. 
+    Sus atributos serán:
+        • capacidad: número máximo de pasajeros
+        • pasajeros: número de pasajeros (inicialmente 0)
+        • conductor: objeto conductor.
+    Sus métodos:
+        • subir(pasajeros): aumenta el numero de pasajeros
+        • bajar(pasajaeros): disminuye el número de pasajeros
+        • conductor: asigna un objeto conductor.
+            El objeto conductor es de una clase (Conductor) cuyos atributos son:
+                • nombre: nombre del conductor
+                • licencia: un número que identifica al conductor.
+Al crear el objeto se asigna también el conductor no pueden subir más pasajeros que los máximos admitidos y no pueden bajar más de los que hay.
