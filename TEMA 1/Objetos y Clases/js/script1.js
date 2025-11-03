@@ -1,34 +1,81 @@
-// Objeto literal alumno (como el ejemplo del profesor persona1)
-let alumno = {
-  nombre: "María Pérez",
+// Objeto literal alumno
+let alumno = { 
+  // Se puede acceder a todas estas variables internas, 
+  nombreCompleto: "Óscar Fernández",
+
+  // Calificaciones es un otro objeto literal anidado, dentro tneemos propiedades clave-valor;
   calificaciones: {
     DIN: 8.5,
-    AaD: 7.0,
+    AaD: 10.0,
     Opt: 6.5,
     IPE: 9.0,
     Ingles: 8.0
   },
 
-  // Método que calcula la media
-  media: function() {
-    let notas = Object.values(this.calificaciones);
-    let suma = notas.reduce((acum, nota) => acum + nota, 0);
-    return (suma / notas.length).toFixed(2);
+  //
+
+
+  // Funciones visibles por defecto
+  devolverNombreCompleto: function(){
+    let divNombreCompleto = document.createElement("div")
+    let pNombreCompleto = document.createElement("p")
+
+    pNombreCompleto.textContent= "Nombre completo: " + this.nombreCompleto;
+
+    divNombreCompleto.appendChild(pNombreCompleto);
+
+    return divNombreCompleto;
   },
 
-  // Método que devuelve los datos del alumno en texto
-  mostrarDatos: function() {
-    let texto = `Nombre del alumno: ${this.nombre}<br>`;
-    texto += "Calificaciones:<br>";
-    for (let modulo in this.calificaciones) {
-      texto += `${modulo}: ${this.calificaciones[modulo]}<br>`;
+
+  devolverCalificaciones: function(){
+    // Creamos el div de calificaciones y la variable suma
+    let divCalificaciones = document.createElement("div")
+    let suma = 0;
+    
+    // Ahora recorremos el objeto de calificaciones
+    for (const modulo in this.calificaciones) {
+
+      // Creamos el párrafo
+      let p = document.createElement("p");
+      // Asignamos el contenido
+      p.textContent = modulo + ": " + this.calificaciones[modulo];
+      // Lo agregamos al div
+      divCalificaciones.appendChild(p);
+
+      // Sumar la nota para calcular media
+      suma += this.calificaciones[modulo];
     }
-    texto += `Media: ${this.media()}`;
-    return texto;
+
+    // Creamos el párrafo con la media
+    let pMedia = document.createElement("p");
+
+    // Aquí calculamos la media, dividiendo la suma entre la cantidad de asignaturas (también podemos utilizar Objects.value)
+    pMedia.textContent = "Media del curso: " + (suma / Object.keys(this.calificaciones).length);
+
+    divCalificaciones.appendChild(pMedia); // Añadimos el <p> de media al div
+
+    return divCalificaciones;
+
+  },
+
+  // Se llamará desde otro método al pulsar el botón
+  mostrarDatosAlumno: function(){
+    // Guardamos el div del nombre y de las calificaciones
+    let divNombreCompleto = this.devolverNombreCompleto(); 
+    let divCalificaciones = this.devolverCalificaciones();
+
+    // Obtenemos el div del resultado y lo reseteamos
+    const divResultado = document.getElementById("resultado");
+    divResultado.textContent= "";
+    
+    // Ahora al div de resultado le añadimos los dos div con el contenido
+    divResultado.appendChild(divNombreCompleto);
+    divResultado.appendChild(divCalificaciones);
   }
 };
 
 // Función que se llama desde el botón del HTML
 function mostrarAlumno() {
-  document.getElementById("resultado").innerHTML = alumno.mostrarDatos();
+  alumno.mostrarDatosAlumno();
 }

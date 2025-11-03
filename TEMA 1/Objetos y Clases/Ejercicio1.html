@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,9 @@
         <p>1 - Define un objeto que sea un alumno para guardar sus calificaciones, los módulos que tienen que tener son DIN, AaD, Opt, IPE e Inglés, en la salida tenemos que devolver el nombre del alumno, las diferentes calificaciones y la media.</p>
 
         <div id="wrapper">
-            <button onclick="mostrarAlumno()">Devolver datos alumno</button>
-            <p id="resultado"></p>
+            <!-- Cada vez que hacemos click llama al método, podríamos poner también alumno.mostrarDatosAlumno()-->
+            <button onclick="mostrarAlumno()" type="button">Mostrar datos del alumno</button> 
+            <div id="resultado"></div> <!-- Aquí vamos a insertar todo el contenido -->
         </div>
     
         <script src="./js/script1.js"></script>
