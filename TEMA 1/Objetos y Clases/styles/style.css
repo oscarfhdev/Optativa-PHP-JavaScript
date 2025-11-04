@@ -13,6 +13,12 @@ button{
     border-radius: 1vh;
 }
 
+input{
+    padding: 1vh;
+    background-color: lightcyan;
+    border-radius: 1vh;
+}
+
 #resultado p{
     color: black;
 }

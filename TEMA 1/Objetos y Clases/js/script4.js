@@ -103,6 +103,25 @@ class Curso{
 
         this.mostrarAlumnosCurso()
     }
+
+    // Se llama desde un método intermedio que le pasa el valor del input
+    buscarAlumnoPorNombre(nombreAlumnoABuscar){
+        let divResultado = document.getElementById("resultado");
+
+        divResultado.textContent = "";
+
+
+        // Recorremos la lista de alumnos para ver si alguno coincide con el nombre, si es aśi lo guardamos
+        for (const alumno of this.alumnos) {
+            if(alumno.nombreCompleto === nombreAlumnoABuscar){
+                // Llamamos a los métodos, añadimos los div
+                divResultado.append(alumno.devolverNombreCompleto()); 
+                divResultado.append(alumno.devolverCalificaciones());
+                return;
+            }
+        }
+        divResultado.textContent = "No se ha encontrado el alumno " + nombreAlumnoABuscar;
+    }
 }
 
 // Creamos varios alumnos con la clase Alumno
@@ -165,4 +184,10 @@ const curso1 = new Curso("Desarrollo de Aplicaciones Multiplataforma", "2DAM", a
 // Función que se llama desde el botón cada vez que se hace click
 function mostrarDatosCurso(){
     curso1.mostrarInformacionCurso();
+}
+
+// Función que se llama desde el botón buscar alumno cada vez que se hace click
+function buscarAlumno(idInput){
+    // Le pasamos el nombre del alumno a buscar
+    curso1.buscarAlumnoPorNombre(document.getElementById(idInput).value)
 }

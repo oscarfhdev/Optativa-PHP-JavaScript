@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 4</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 4</h1>
+        <p>4 - Añade al ejercicio anterior un método para buscar dentro del array de alumnos por un alumno en concreto y que muestre sus calificaciones.</p>
+
+        <div id="wrapper">
+        <!-- Cada vez que hacemos click llama al método, podríamos poner también alumno.mostrarDatosAlumno()-->
+
+            <label for="nombreAlumno">Nombre del alumno a buscar: </label>
+            <input id="nombreAlumno" type="text" placeholder="Nombre">
+
+            <br>
+            <br>
+
+            <button onclick="mostrarDatosCurso()">Ver los alumnos del curso</button>
+            <button onclick="buscarAlumno('nombreAlumno')">Buscar alumno</button>
+
+
+            <div id="resultado"></div> <!-- Aquí vamos a insertar todo el contenido -->
+        </div>
+    
+        <script src="./js/script4.js"></script>
+    </body>
+</html> 
