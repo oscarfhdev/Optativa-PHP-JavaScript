@@ -12,17 +12,16 @@ let alumno = {
     Ingles: 8.0
   },
 
-  //
-
-
   // Funciones visibles por defecto
   devolverNombreCompleto: function(){
+    // Creamos el div y el p
     let divNombreCompleto = document.createElement("div")
     let pNombreCompleto = document.createElement("p")
 
+    // Le configuramos el texto al p, añadiendo el nombre
     pNombreCompleto.textContent= "Nombre completo: " + this.nombreCompleto;
 
-    divNombreCompleto.appendChild(pNombreCompleto);
+    divNombreCompleto.appendChild(pNombreCompleto); // Se añade p>div
 
     return divNombreCompleto;
   },
@@ -32,7 +31,7 @@ let alumno = {
     // Creamos el div de calificaciones y la variable suma
     let divCalificaciones = document.createElement("div")
     let suma = 0;
-    
+
     // Ahora recorremos el objeto de calificaciones
     for (const modulo in this.calificaciones) {
 
