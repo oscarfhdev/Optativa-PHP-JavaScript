@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 5</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 5</h1>
+        <p>5 - Define un objeto, mediante una expresión, que tenga dos propiedades: precio y descuento y un método neto que devuelve el valor del objeto con el descuento aplicado. El método calculará el precio con el descuento aplicado. Los valores se pedirán por teclado.</p>
+
+        <div id="wrapper">
+
+            <!-- Pedimos que introduzcan el preecio y el descuento -->
+            <label for="precioProducto">Precio del producto: </label>
+            <input id="precioProducto" type="number" placeholder="precio">
+
+            <label for="descuentoAplicado">Descuento aplicado: </label>
+            <input id="descuentoAplicado" type="number" placeholder="Descuento aplicado en %">
+
+            <br>
+            <br>
+
+            <button onclick="mostrarPrecioDescuento('precioProducto', 'descuentoAplicado')">Ver el precio con descuento</button> <!-- Al pulsar introducimos en el div de abajo el resultado-->
+
+            <div id="resultado"></div> <!-- Aquí vamos a insertar todo el contenido -->
+        </div>
+    
+        <script src="./js/script5.js"></script>
+    </body>
+</html> 
