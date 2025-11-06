@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 6</title>
+    </head>
+
+    <body onload="cargarDatos()"> <!-- Al entrar en la página se cargan los datos -->
+        <h1>Ejercicio 6</h1>
+        <p>6 - Define un objeto constructor que sea un cliente, este cliente tiene un nombre y un saldo bancario (variables privadas), crea los métodos ingreso, retirada y consultar para añadir, retirar o consultar el estado de las cuentas.</p>
+
+        <div id="wrapper">
+            <!-- Aquí se muestra el nombre del cliente y el saldo-->
+            <p class="datos" id="cliente"></p>
+            <p class="datos" id="saldo"></p>
+
+             <!-- Pedimos que introduzcan el importe-->
+            <label for="importe">Importe: </label>
+            <input id="importe" type="number" placeholder="Importe">
+
+            <br>
+            <br>
+            <label>Operación a realizar:</label>
+
+            <button onclick="depositarImporte('importe')">Depositar importe</button>
+            <button onclick="retirarImporte('importe')">Retirar importe</button>
+            <p id="error"></p> <!-- En el caso de que haber errores se muestran aquí-->
+        </div>
+    
+        <script src="./js/script6.js"></script>
+    </body>
+</html> 

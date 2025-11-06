@@ -11,9 +11,10 @@ Realiza los siguientes ejercicios utilizando las clases y objetos de JavaScript:
 5 - Define un objeto, mediante una expresión, que tenga dos propiedades: precio y descuento y un método neto que devuelve el valor del objeto con el descuento aplicado. El método calculará el precio con el descuento aplicado. Los valores se pedirán por teclado.
 
 6 - Define un objeto constructor que sea un cliente, este cliente tiene un nombre y un saldo bancario (variables privadas), crea los métodos ingreso, retirada y consultar para añadir, retirar o consultar el estado de las cuentas.
-    • Crea una clase Ficha, con su constructor, que se usará para almacenar el número de kilómetros recorridos por una persona en cada sesión de ejercicios. Las propiedades de la clase serán: nombre de la persona, distancia, un array con la distancia de cada una de las sesiones. Hay que implementar dos métodos, anotar: anota los kilómetros en el array y media: calcula la media de kilómetros recorridos
 
-7 - Crea una clase que llamaremos Bus. 
+7 - Crea una clase Ficha, con su constructor, que se usará para almacenar el número de kilómetros recorridos por una persona en cada sesión de ejercicios. Las propiedades de la clase serán: nombre de la persona, distancia, un array con la distancia de cada una de las sesiones. Hay que implementar dos métodos, anotar: anota los kilómetros en el array y media: calcula la media de kilómetros recorridos
+
+8 - Crea una clase que llamaremos Bus. 
     Sus atributos serán:
         • capacidad: número máximo de pasajeros
         • pasajeros: número de pasajeros (inicialmente 0)

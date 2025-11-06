@@ -1,4 +1,4 @@
-// Creamos la clase alumno
+// Creamos el objeto literal
 let objetoConDescuento = {
     precio: 0,
     descuento: 0,
