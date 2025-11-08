@@ -23,6 +23,7 @@ function ConstructorCliente(nombreCompleto, saldoInicial){
     }
 }
 
+
 // Instanciamos el cliente pasándole los valores iniciales nombreCompleto y saldo
 const cliente1 = new ConstructorCliente("Óscar Fernández", 5500);
 
@@ -43,7 +44,6 @@ function depositarImporte(idInputImporte){
         cargarDatos();
         inputImporte.value = "";
         mostrarError("")
-
     }
 
 }
@@ -75,6 +75,6 @@ function mostrarError(mensaje) {
 
 // Función que se llama para actualizar los datos en el HTML, actualiza nombre y saldo cada vez que se llama
 function cargarDatos(){
-    const pNombreCompleto = document.getElementById("cliente").textContent = "Nombre del cliente: " + cliente1.getNombreCompleto();
-    const pSaldo = document.getElementById("saldo").textContent = "Saldo bancario: " + cliente1.getSaldo();
+    document.getElementById("cliente").textContent = "Nombre del cliente: " + cliente1.getNombreCompleto();
+    document.getElementById("saldo").textContent = "Saldo bancario: " + cliente1.getSaldo();
 }
