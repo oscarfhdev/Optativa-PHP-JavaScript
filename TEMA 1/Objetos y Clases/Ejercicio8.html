@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 8</title>
+    </head>
+
+    <body onload="cargarDatos()"> <!-- Al entrar en la página se cargan los datos -->
+        <h1>Ejercicio 8</h1>
+        <p>8 - Crea una clase que llamaremos Bus. 
+        <ul>
+            Sus atributos serán:
+            <li>capacidad: número máximo de pasajeros</li>
+            <li>pasajeros: número de pasajeros (inicialmente 0)</li>
+            <li>conductor: objeto conductor.</li>
+        </ul>
+        <ul>
+            Sus métodos:
+            <li>subir(pasajeros): aumenta el numero de pasajeros</li>
+            <li>bajar(pasajaeros): disminuye el número de pasajeros</li>
+            <li>conductor: asigna un objeto conductor.</li>
+        </ul>
+        <ul>El objeto conductor es de una clase (Conductor) cuyos atributos son:
+            <li>nombre: nombre del conductor</li>
+            <li>licencia: un número que identifica al conductor.</li>
+        </ul>
+        <p>Al crear el objeto se asigna también el conductor no pueden subir más pasajeros que los máximos admitidos y no pueden bajar más de los que hay.</p>
+
+        </p>
+        <div id="wrapper">
+            <!-- Aquí se muestra el nombre del cliente y el saldo-->
+            <div class="datos"></div>
+
+             <!-- Pedimos que introduzcan el importe-->
+            <label for="kilometrosSesion">Cantidad de pasajeros: </label>
+            <input id="kilometrosSesion" type="number" placeholder="Importe">
+            <p id="error"></p> <!-- En el caso de que haber errores se muestran aquí-->
+
+
+            <br>
+            <label>Operación a realizar:</label>
+
+            <button onclick="subirPasajeros('kilometrosSesion')">Subir pasajeros</button>
+            <button onclick="bajarPasajeros('media')">Bajar pasajeros</button>
+
+        </div>
+    
+        <script src="./js/script8.js"></script>
+    </body>
+</html> 
