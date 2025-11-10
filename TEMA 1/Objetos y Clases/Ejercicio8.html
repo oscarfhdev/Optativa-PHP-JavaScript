@@ -30,20 +30,25 @@
 
         </p>
         <div id="wrapper">
-            <!-- Aquí se muestra el nombre del cliente y el saldo-->
-            <div class="datos"></div>
+            <!-- Aquí se muestran los datos del autobús y los pasajeros-->
+            <div id="datos" class="datos"></div>
 
              <!-- Pedimos que introduzcan el importe-->
-            <label for="kilometrosSesion">Cantidad de pasajeros: </label>
-            <input id="kilometrosSesion" type="number" placeholder="Importe">
+            <label for="cantidadPasajeros">Cantidad de pasajeros: </label>
+            <input id="cantidadPasajeros" type="number" placeholder="Importe">
             <p id="error"></p> <!-- En el caso de que haber errores se muestran aquí-->
 
 
             <br>
             <label>Operación a realizar:</label>
 
-            <button onclick="subirPasajeros('kilometrosSesion')">Subir pasajeros</button>
-            <button onclick="bajarPasajeros('media')">Bajar pasajeros</button>
+            <button onclick="subirPasajeros('cantidadPasajeros')">Subir pasajeros</button>
+            <button onclick="bajarPasajeros('cantidadPasajeros')">Bajar pasajeros</button>
+
+            <br>
+            <br>
+            <button onclick="mostrarConductor('datosConductor')">Mostrar conductor</button>
+            <p class="datos" id="datosConductor"></p>
 
         </div>
     
