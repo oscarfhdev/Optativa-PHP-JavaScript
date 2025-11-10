@@ -15,6 +15,7 @@ let objetoConDescuento = {
     }
 }
 
+
 // Función que se llama desde el botón buscar alumno cada vez que se hace click
 function mostrarPrecioDescuento(idInputPrecio, idInputDescuento){
 

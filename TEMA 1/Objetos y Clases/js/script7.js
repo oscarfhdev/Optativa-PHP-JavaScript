@@ -54,7 +54,7 @@ function anadirNuevaSesion(idInputImporte){
     const inputKilometrosSesion = document.getElementById(idInputImporte);
     const valorKilometrosSesion = +inputKilometrosSesion.value;
 
-    // Hacemos una comprobación, no aceptamos depositar negativo
+    // Hacemos una comprobación, no aceptamos que los kilómetros sean < 0
     if(valorKilometrosSesion <= 0){
         mostrarError("La cantidad no puede ser menor o igual a 0, ni estar vacía");
     }
@@ -68,13 +68,13 @@ function anadirNuevaSesion(idInputImporte){
 
 }
 
-// Método que se llama desde el botón de calcular la media
+// Método que se llama desde el botón de calcular la media de las sesiones
 function mostrarMedia(idPMedia){
-    document.getElementById(idPMedia).textContent = persona.devolverMedia();
+    document.getElementById(idPMedia).textContent = persona.devolverMedia() + " km por sesión";
 }
 
 
-// Método que se llama desde los métodos depositar y retirar en el caso de haber errores
+// Método que se llama desde el método añadir sesión en el caso de haber errores
 function mostrarError(mensaje) {
     return document.getElementById("error").textContent = mensaje;
 }

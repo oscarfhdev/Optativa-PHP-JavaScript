@@ -9,7 +9,7 @@ class Bus {
     // Aquí tenemos el constructor, las variables se declaran dentro
     constructor(capacidadMaxima, conductor) {
         this.#capacidadMaxima = capacidadMaxima;
-        this.#numeroPasajeros = 0;
+        this.#numeroPasajeros = 0; // Inicializamos el número de pasajeros a 0
         this.#conductor = conductor;
     }
 
@@ -48,6 +48,7 @@ class Bus {
         this.#numeroPasajeros -= numeroPasajeros;
     }
 
+    // Esto es como un toString personalizado en Java 
     mostrarInfo(){
         return "Autobús: capacidad máxima: " + this.getCapacidadMaxima() + " , pasajeros actualmente: " + this.getNumeroPasajeros();
     }
@@ -98,7 +99,7 @@ function bajarPasajeros(idImputPasajeros){
     const inputCantidadPasajeros = document.getElementById(idImputPasajeros);
     const valorCantidadPasajeros = +inputCantidadPasajeros.value;
 
-    // Comprobamos que no retiremos cantidad negativa ni más del saldo actual
+    // Comprobamos que no retiremos cantidad negativa ni más de los pasajeros actuales
     if(valorCantidadPasajeros <= 0 || valorCantidadPasajeros > bus1.getNumeroPasajeros()){
         mostrarError("La cantidad no puede estar vacía ni ser menor o igual que 0, tampoco ser superior a los pasajeros actuales");
     }

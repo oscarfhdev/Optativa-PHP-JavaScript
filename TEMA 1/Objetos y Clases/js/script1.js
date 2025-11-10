@@ -26,7 +26,7 @@ let alumno = {
     return divNombreCompleto;
   },
 
-
+  // Devolvemos un div con las calificiones
   devolverCalificaciones: function(){
     // Creamos el div de calificaciones y la variable suma
     let divCalificaciones = document.createElement("div")

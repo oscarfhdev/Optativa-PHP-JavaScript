@@ -1,7 +1,7 @@
 // Creamos la clase alumno
 class Alumno {
 
-    // Aquí tenemos el constructor, las variables se declaran dentro
+    // Aquí tenemos el constructor, las variables se declaran dentro, en este caso son públicas
     constructor(nombreCompleto, calificaciones) {
         this.nombreCompleto = nombreCompleto;
         this.calificaciones = calificaciones;

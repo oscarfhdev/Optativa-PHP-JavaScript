@@ -1,7 +1,7 @@
 // Creamos la clase alumno
 class Alumno {
 
-    // Aquí tenemos el constructor, las variables se declaran dentro
+    // Aquí tenemos el constructor, las variables se declaran dentro, son públicas
     constructor(nombreCompleto, calificaciones) {
         this.nombreCompleto = nombreCompleto;
         this.calificaciones = calificaciones;
@@ -79,6 +79,7 @@ class Curso{
     mostrarAlumnosCurso(){
         let divResultado = document.getElementById("resultado");
 
+        // Recorremos el array de alumnos y vamos mostrando uno por uno
         for (const alumno of this.alumnos) {
             // Llamamos a los métodos, añadimos los div y 
             divResultado.append(alumno.devolverNombreCompleto()); 
@@ -87,7 +88,7 @@ class Curso{
         }
     }
 
-    // Este método llama al final a mostrarAlumnosCurso para añadir toda la información
+    // Este método llama al final a mostrarAlumnosCurso para añadir toda la información, antes muestra el nombre del curso y el aula
     mostrarInformacionCurso(){
         let divResultado = document.getElementById("resultado");
         divResultado.textContent = ""; // Reseteamos el contenido por si se le da varias veces al botón
@@ -96,11 +97,14 @@ class Curso{
         let pElement = document.createElement("p");
         pElement.textContent = "Nombre del Curso: " + this.nombreCurso;
         divResultado.appendChild(pElement);
+
         let pElement2 = document.createElement("p")
         pElement2.textContent = "Aula: " + this.aula;
         divResultado.appendChild(pElement2);
+
         divResultado.appendChild(document.createElement("br"));
 
+        // Por último llamamos a este método, para debajo del nombre del curso y aula mostrar todos los alumnos
         this.mostrarAlumnosCurso()
     }
 }
@@ -157,7 +161,7 @@ const alumno6 = new Alumno("Elena Torres", {
 
 
 
-const alumnos = [alumno1, alumno2, alumno3, alumno4, alumno5, alumno6]; // Esto es un array de alumnos
+const alumnos = [alumno1, alumno2, alumno3, alumno4, alumno5, alumno6]; // Esto es un array de alumnos, insertamos los que hemos creato arriba
 
 // Ahora creamos el curso
 const curso1 = new Curso("Desarrollo de Aplicaciones Multiplataforma", "2DAM", alumnos) // Lo creamos con el nombre y le pasamos los alumnos del curso
