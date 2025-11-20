@@ -1,0 +1,29 @@
+h1, p{
+    color: cornflowerblue;
+}
+
+div{
+    padding: 1vw;
+}
+
+button{
+    background-color: lightskyblue;
+    padding: 1vh;
+    font-weight: bold;
+    border-radius: 1vh;
+}
+
+input{
+    padding: 1vh;
+    background-color: lightcyan;
+    border-radius: 1vh;
+}
+
+#error{
+    color: red;
+}
+
+.datos, .datos p{
+    color: black;
+    font-weight: bold;
+}

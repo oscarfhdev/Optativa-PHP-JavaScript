@@ -1,0 +1,17 @@
+1 - Crea un script que reciba dos números y en función de un texto sume, reste, multiplique o divida, en el caso de la división tiene que decir el cociente y el resto de la operación.
+
+2 - Crea un script que genere un numero aleatorio entre el 1 y el 50 y una entrada de datos para que el usuario intente adivinar que numero es.
+
+3 - Crea un script que cada vez que responda a un evento (el evento y como activarlo lo elijes tu) se tire un dado aleatorio y este te devuelva el resultado. Descárgate de internet las 6 caras diferentes de un dado y en función del número que salga que muestre una cara u otra.
+
+4 - Crea un script que devuelva el numero factorial introducido por teclado.
+
+5 - Crea un script que contenga un array de marcas de coches, el programa tiene una entrada de datos y tiene que permitir introducir un elemento o borrarlo dentro del array, el array tiene siempre que estar mostrado en pantalla y cuando se borra o añade un elemento se tiene que actualizar.
+
+6 - Crea dos cuadros de texto en un html, crea un script que cada vez que se escriba en un cuadro de texto, solamente los números se escriban en el otro cuadro de texto (además de en el cuadro de texto donde estas escribiendo), en el segundo cuadro de texto no se puede escribir, implementa un evento para borrar el contenido de ambos cuadros de texto. Además, cuando estemos escribiendo en el primer cuadro de texto deberá resaltarse sobre el otro y cuando no volver a la normalidad.
+
+7 - Crea una web que cada 5 segundos cree una tabla con una columna y N filas, siendo N el número de segundo que lleva la página activa entre 5. Esta función se cargará en body.
+
+8 - Crea un script que permita iniciar un cronometro y a los 10 segundo que te cree título con el texto que quieras.
+
+9 - Crea un array que almacene varios elementos de la clase compra, la clase tendrá un array de string con los productos que tiene que comprar, fecha que contiene el día que se realizara la compra y un array que contenga el número de unidades de cada elemento de la lista de la compra.En la vista HTML se tiene que poder ver cuantos elementos compra tiene el array y poder visualizar uno a elección del usuario.

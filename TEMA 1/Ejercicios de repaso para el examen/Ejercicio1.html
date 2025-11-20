@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 1</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 1</h1>
+        <p>1 - Crea un script que reciba dos números y en función de un texto sume, reste, multiplique o divida, en el caso de la división tiene que decir el cociente y el resto de la operación.</p>
+
+        <div id="wrapper">
+            <!-- Pedimos que introduzcan los números-->
+            <label for="numero1">Número 2: </label>
+            <input id="numero1" type="number" placeholder="Valor 1">
+            <br>
+            <br>
+            <label for="numero2">Número 2: </label>
+            <input id="numero2" type="number" placeholder="Valor 2">
+            <label for="operacion">Ingresa la operación a realizar (+,-,/,*): </label>
+            <input id="operacion" type="text" placeholder="Valor 2">
+            <br>
+            <br>
+
+            <!-- Cada vez que hacemos click llama al método, podríamos poner también alumno.mostrarDatosAlumno()-->
+            <button onclick="ejecutarOperacion()" type="button">Ejecutar operación</button> 
+            <div id="resultado"></div> <!-- Aquí vamos a insertar todo el contenido -->
+        </div>
+    
+        <script src="./js/script1.js"></script>
+    </body>
+</html> 
