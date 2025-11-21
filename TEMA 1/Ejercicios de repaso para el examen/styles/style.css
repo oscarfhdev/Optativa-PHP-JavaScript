@@ -23,7 +23,7 @@ input{
     color: red;
 }
 
-.datos, .datos p{
+#resultado, #resultado p{
     color: black;
     font-weight: bold;
 }

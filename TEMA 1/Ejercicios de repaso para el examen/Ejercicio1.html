@@ -13,20 +13,27 @@
 
         <div id="wrapper">
             <!-- Pedimos que introduzcan los números-->
-            <label for="numero1">Número 2: </label>
+            <label for="numero1">Número 1: </label>
             <input id="numero1" type="number" placeholder="Valor 1">
             <br>
             <br>
             <label for="numero2">Número 2: </label>
             <input id="numero2" type="number" placeholder="Valor 2">
-            <label for="operacion">Ingresa la operación a realizar (+,-,/,*): </label>
-            <input id="operacion" type="text" placeholder="Valor 2">
             <br>
             <br>
 
-            <!-- Cada vez que hacemos click llama al método, podríamos poner también alumno.mostrarDatosAlumno()-->
-            <button onclick="ejecutarOperacion()" type="button">Ejecutar operación</button> 
+            <!-- Aquí recogemos el tipo de operacion-->
+            <label for="operacion">Ingresa la operación a realizar (+,-,/,*): </label>
+            <input id="operacion" type="text" placeholder="+, -, /, *">
+            <br>
+            <br>
+
+            <button onclick="ejecutarOperacion('numero1', 'numero2', 'operacion')" type="button">Ejecutar operación</button> 
+
+            <p id="error"></p> <!-- En el caso de que haber errores se muestran aquí-->
+
             <div id="resultado"></div> <!-- Aquí vamos a insertar todo el contenido -->
+
         </div>
     
         <script src="./js/script1.js"></script>
