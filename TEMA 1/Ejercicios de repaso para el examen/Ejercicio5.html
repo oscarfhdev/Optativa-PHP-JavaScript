@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 5</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 5</h1>
+        <p>Crea un script que contenga un array de marcas de coches, el programa tiene una entrada de datos y tiene que permitir introducir un elemento o borrarlo dentro del array, el array tiene siempre que estar mostrado en pantalla y cuando se borra o añade un elemento se tiene que actualizar.</p>
+
+        <div id="wrapper">
+            <!-- Ingreso el array dentro de resultado para aprovechar la clase css-->
+            <div id="resultado">
+                <p id="arrayMarcas"></p>
+            </div>
+
+            <!-- Pedimos que introduzcan el nombre de la marca-->
+            <label for="nombre_marca">Ingresa el nombre de la marca: <label>
+            <input id="nombre_marca" type="text" placeholder="Nombre de la marca">
+
+            <!-- Al pulsar el botón el evento onclick ejecuta la función añadir/eliminar la marca-->
+            <button onclick="addMarca('nombre_marca')" type="button">Añadir a la lista</button> 
+            <button onclick="eliminarMarca('nombre_marca')" type="button">Eliminar de la lista</button> 
+
+            <p id="error"></p> <!-- En el caso de que haber errores se muestran aquí-->
+
+        </div>
+    
+        <script src="./js/script5.js"></script>
+    </body>
+</html> 

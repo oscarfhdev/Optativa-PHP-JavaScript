@@ -1,10 +1,10 @@
 // Método que se llama desde el botón de calcular factorial, le pasamos desde el HTML el id del input
 function calcularFactorial(idInputNumero) {
   
-  // Ahora obtenemos la imagen con el id que viene por parámetro
+  // Ahora obtenemos el número con el id que viene por parámetro
   const inputNumero = document.getElementById(idInputNumero);
   const numero = Number(inputNumero.value);
-  let resultadoFactorial = 1;
+  let resultadoFactorial = 1; // Lo inicializamos a 1 para evitarnos problemas de multiplicación por 0
 
   // Si es menor mostramos el error
   if(numero < 0){
@@ -23,7 +23,7 @@ function calcularFactorial(idInputNumero) {
   let divResultado = document.getElementById('resultado');
   divResultado.textContent = "";
 
-  // Creamos el elemento p y le seteamos el texto con el resultado de la comparación
+  // Creamos el elemento p y le seteamos el texto con el resultado del factorial
   let pResultado = document.createElement("p");
   pResultado.textContent = resultadoFactorial;
   divResultado.append(pResultado); // Por último le appendamos el p a el div de datos
