@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 6</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 6</h1>
+        <p>Crea dos cuadros de texto en un html, crea un script que cada vez que se escriba en un cuadro de texto, solamente los números se escriban en el otro cuadro de texto (además de en el cuadro de texto donde estas escribiendo), en el segundo cuadro de texto no se puede escribir, implementa un evento para borrar el contenido de ambos cuadros de texto. Además, cuando estemos escribiendo en el primer cuadro de texto deberá resaltarse sobre el otro y cuando no volver a la normalidad.</p>
+
+        <div id="wrapper">
+            <!-- Pedimos que introduzcan una cadena de caracteres (números y letras) -->
+
+            <label for="inputTextoNumeros">Cadena de texto y números: <label>
+            <!-- Este input tiene tres eventos, al soltar la tecla pulsada, y al poner&quitar la atención, por lo que cada vez que pase uno de estos eventos se llamarán a las funciones de js-->
+            <input onkeyup="escribirNumeros(this, 'inputNumeros')" onfocus="resaltar(this)" onblur="restablecer(this)" id="inputTextoNumeros" type="text" placeholder="números y letras"> 
+
+            <br><br>
+            <label for="inputNumeros">Números escritos arriba: <label>
+            <!-- Este input está desactivado-->
+            <input id="inputNumeros" type="text" placeholder="números detectados" disabled> 
+            <br><br>
+
+            <!-- Al pulsar el botón el evento onclick ejecuta la función para restablecer los input -->
+            <button onclick="restablecerInputs('inputTextoNumeros', 'inputNumeros')" type="button">Restablecer inputs</button> 
+
+
+        </div>
+    
+        <script src="./js/script6.js"></script>
+    </body>
+</html> 
