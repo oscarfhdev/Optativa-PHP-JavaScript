@@ -37,3 +37,8 @@ table{
     border-collapse: collapse;
     text-align: center;
 }
+
+#arrayCompras{
+    color: black;
+    font-weight: bold;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 9</title>
+    </head>
+
+    <body onload="cargarComprasPendientes()">
+        <h1>Ejercicio 9</h1>
+        <p>Crea un array que almacene varios elementos de la clase compra, la clase tendrá un array de string con los productos que tiene que comprar, fecha que contiene el día que se realizara la compra y un array que contenga el número de unidades de cada elemento de la lista de la compra. En la vista HTML se tiene que poder ver cuantos elementos compra tiene el array y poder visualizar uno a elección del usuario.</p>
+
+        <div id="wrapper">
+            <p id="arrayCompras"></p> <!-- Este será el párrafo va a mostrar las compras disponibles -->
+
+            <!-- El inpup va a permitir buscar poer el nombre de la compra-->
+            <label for="nombreCompra">Ingresa el nombre de la compra que quieres ver: <label>
+            <input type="text" id="nombreCompra" placeholder="Nombre de la compra"> 
+
+            <!-- Al darle a click al botón se muestra la compra-->
+            <button onclick="mostrarCompra('nombreCompra')" type="button">Mostrar compra</button> 
+
+            <p id="error"></p> <!-- En el caso de que haya algún error se muestra aquí-->
+
+            <!-- En este div se introducirán la información de las compras -->
+            <div id="resultado"> 
+
+            </div>
+
+        </div>
+
+     
+    
+        <script src="./js/script9.js"></script>
+    </body>
+</html> 
