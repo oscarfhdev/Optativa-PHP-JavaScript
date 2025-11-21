@@ -1,7 +1,7 @@
 // Al ejecutar el script se crea el número aleatorio
 const numeroAleatorio = Math.floor(Math.random()* 50) +1;
 
-// Método que se llama desde el botón de ejecutar operacion, le pasamos desde el HTML todos los IDs
+// Método que se llama desde el botón de adivinar número , le pasamos desde el HTML todos los IDs
 function adivinarNumeroAleatorio(idInputNumero) {
   // Obtenemos el input y el valor
   const inputNumero = document.getElementById(idInputNumero);
