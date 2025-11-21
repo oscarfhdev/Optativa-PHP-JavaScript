@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 2</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 2</h1>
+        <p>2 - Crea un script que genere un numero aleatorio entre el 1 y el 50 y una entrada de datos para que el usuario intente adivinar que numero es.</p>
+
+        <div id="wrapper">
+            <!-- Pedimos que introduzcan el número-->
+            <label for="numero">Ingresa un número (1-50)<label>
+            <input id="numero" type="text" placeholder="Numero a adivinar">
+            <br>
+            <br>
+
+            <!-- Al pulsar el botón comprobamos si el número introducido es similar-->
+            <button onclick="adivinarNumeroAleatorio('numero')" type="button">Adivinar número</button> 
+
+
+            <div id="resultado"></div> <!-- Aquí vamos a insertar todo el contenido -->
+
+        </div>
+    
+        <script src="./js/script2.js"></script>
+    </body>
+</html> 
