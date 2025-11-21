@@ -87,7 +87,7 @@ function operacionValida(valorInputOperacion) {
   }
 }
 
-// Esta función es 
+// Esta función es llamada desde otros métodos para mostrar los errores
 function mostrarError(error) {
   let pError = document.getElementById("error");
   pError.textContent = error;

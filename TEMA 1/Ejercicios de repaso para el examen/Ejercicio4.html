@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 4</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 4</h1>
+        <p>Crea un script que devuelva el numero factorial introducido por teclado.</p>
+
+        <div id="wrapper">
+            <!-- Pedimos que introduzcan el número-->
+            <label for="numero">Ingresa un número (positivo)<label>
+            <input id="numero" type="number" placeholder="Número positivo">
+
+            <!-- Al pulsar el botón el evento onclick ejecuta la función de calcular el factorial-->
+            <button onclick="calcularFactorial('numero')" type="button">Calcular factorial</button> 
+
+            <div id="resultado"></div> <!-- Aquí vamos a insertar todo el contenido -->
+
+            <p id="error"></p> <!-- En el caso de que haber errores se muestran aquí-->
+
+        </div>
+    
+        <script src="./js/script4.js"></script>
+    </body>
+</html> 
