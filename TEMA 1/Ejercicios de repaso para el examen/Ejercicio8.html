@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 8</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 8</h1>
+        <p>Crea un script que permita iniciar un cronómetro y a los 10 segundo que te cree título con el texto que quieras.</p>
+
+        <div id="wrapper">
+            <!-- Al pulsar en el botón el cronómetro se inicia, la función se ejecuta cada segundo-->
+            <button onclick="setInterval(iniciarCronometro, 1000)" type="button">Iniciar cronómetro</button> 
+
+        </div>
+
+        <div id="resultado">
+            <p id="cronometro">0m : 0s</p> <!-- Este será el párrafo que se va a actualizar -->
+        </div>
+    
+        <script src="./js/script8.js"></script>
+    </body>
+</html> 
