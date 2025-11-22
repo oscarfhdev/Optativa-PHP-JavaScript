@@ -1,0 +1,54 @@
+h1, p{
+    color: cornflowerblue;
+}
+
+div{
+    padding: 1vw;
+}
+
+button{
+    background-color: lightskyblue;
+    padding: 1vh;
+    font-weight: bold;
+    border-radius: 1vh;
+}
+
+input{
+    padding: 1vh;
+    background-color: lightcyan;
+    border-radius: 1vh;
+}
+
+#error{
+    color: red;
+}
+
+#resultado, #resultado p{
+    color: black;
+    font-weight: bold;
+}
+
+td{
+    border: 1px solid darkcyan ;
+    padding: 1vw;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#arrayCompras{
+    color: black;
+    font-weight: bold;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+#fraseAleatoria{
+    color: black;
+    font-weight: bold;
+}

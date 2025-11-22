@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 5</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 5</h1>
+        <p>Crea un script con varios cuadros de texto, cuando el ratón esta encima del cuadro el color de la letra y el tamaño del texto debe variar, cuando el ratón abandone el cuadro de texto vuelva al estado anterior, cuando selecciones el cuadro de texto el fondo tiene que cambiar de color y cuando no este seleccionado volver al original. Para manipular el tamaño de la fuente por DOM se utiliza fontSize en vez de font-size. (1 punto)<p>
+
+        <div id="wrapper">
+
+            <input id="prueba1" onmouseover="colorYTamanoTexto(this)" onmouseleave="restablecerColorYTananoTexto(this)" onfocus="cambiarColor(this)" onblur="restablecerColor(this)" type="text" placeholder="cuadro de prueba">
+            <input id="prueba2" onmouseover="colorYTamanoTexto(this)" onmouseleave="restablecerColorYTananoTexto(this)" onfocus="cambiarColor(this)" onblur="restablecerColor(this)" type="text" placeholder="cuadro de prueba">
+            <input id="prueba2" onmouseover="colorYTamanoTexto(this)" onmouseleave="restablecerColorYTananoTexto(this)" onfocus="cambiarColor(this)" onblur="restablecerColor(this)" type="text" placeholder="cuadro de prueba">
+
+
+
+
+            <div id="resultado">
+                <p id="cronometro">0</p>
+            </div>
+
+        </div>
+    
+        <script src="./js/script5.js"></script>
+    </body>
+</html> 

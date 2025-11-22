@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 2</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 2</h1>
+        <p>Crea un script que compruebe que los datos de un formulario están escritos correctamente, los campos del formulario son: Nombre completo, número de teléfono y dirección. El nombre completo solo puede tener caracteres, el número de teléfono solamente admite dígitos, y la dirección puede tener caracteres alfa-numéricos. Debes comprobar que los valores introducidos cumplen con el formato. Para extraer los elementos debes usar getElementByTagName. Si algún elemento no dtuviera el formato adecuado debes borrar el campo y mostrar un mensaje de error.(1'5 punto)</p>
+
+        <div id="wrapper">
+
+            <input id="nombreCompleto" type="text" placeholder="Nombre completo">
+            <input id="numeroTelefono" type="text" placeholder="Nombre completo">
+            <input id="direccion" type="text" placeholder="Nombre completo">
+
+            <button type="button" onclick="validarCampos()">Validar campos</button>
+
+            <p id="error"></p>
+
+        </div>
+    
+        <script src="./js/script2.js"></script>
+    </body>
+</html> 

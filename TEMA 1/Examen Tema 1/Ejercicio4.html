@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 4</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 4</h1>
+        <p>Crea un script que cuando inicie la página se inicie un cronometro, además se contara con tres funciones diferentes, avanzar, parar y retroceder. La función avanzar incrementará el cronometro en una unidad cada segundo, la función parar detendrá el cronometro en el instante en el que se pulse y la función retroceder deberá restar una unidad por segundo al cronometro. (1'5 punto) Se tiene que implementar 3 botones para las tres funciones anteriores. El valor del cronometro no puede exceder las 100 unidades ni tener menos de 0 unidades.<p>
+
+        <div id="wrapper">
+
+            <button onclick="iniciar()" type="button">Iniciar cronometro</button>
+            <button onclick="pararCronometro()" type="button">Para cronometro</button>
+            <button onclick="retrocederCronometro()" type="button">Retroceder cronometro</button>
+
+
+            <div id="resultado">
+                <p id="cronometro">0</p>
+            </div>
+
+        </div>
+    
+        <script src="./js/script4.js"></script>
+    </body>
+</html> 
