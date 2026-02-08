@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 5</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 5</h1>
+        <p>5 - Crea una función, que haciendo uso de las callbacks te devuelva si una cadena es numérica, alfabética o alfanumérica.</p>
+
+        <div id="wrapper">
+            <!-- Pedimos que introduzcan la cadena de texto -->
+            <label for="inputCadena">Introduce una cadena: </label>
+            <input id="inputCadena" type="text" placeholder="Ej: Hola123">
+            <br><br>
+            
+            <!-- Botón para comprobar la cadena -->
+            <button onclick="comprobarCadena()" type="button">Comprobar Cadena</button> 
+
+            <p id="error"></p> <!-- En el caso de que haber errores se muestran aquí-->
+
+            <div id="resultado">
+                <!-- Aquí se mostrará el resultado -->
+            </div> 
+        </div>
+    
+        <script src="./js/Ejercicio5.js"></script>
+    </body>
+</html> 
