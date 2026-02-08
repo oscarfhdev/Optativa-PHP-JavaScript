@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 2</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 2</h1>
+        <p>2 - Crea un objeto tenga los siguientes campos: titulo, cuerpo y autor, después crea un formulario para rellenar los diferentes campos del objeto, después crea una función para crear el objeto con los datos introducidos en el formulario e incrústalo en el código html usando DOM, añade la función de borrar el objeto.</p>
+
+        <div id="wrapper">
+            <!-- Formulario para los datos del objeto -->
+            <label for="titulo">Título: </label>
+            <input id="titulo" type="text" placeholder="Título">
+            <br><br>
+
+            <label for="cuerpo">Cuerpo: </label>
+            <input id="cuerpo" type="text" placeholder="Cuerpo">
+            <br><br>
+
+            <label for="autor">Autor: </label>
+            <input id="autor" type="text" placeholder="Autor">
+            <br><br>
+            
+            <button onclick="crearObjeto()" type="button">Crear Objeto</button> 
+            
+            <p id="error"></p>
+
+            <div id="resultado">
+                <!-- Aquí se mostrarán los objetos creados -->
+                <div id="containerObjetos"></div>
+            </div> 
+        </div>
+    
+        <script src="./js/Ejercicio2.js"></script>
+    </body>
+</html> 

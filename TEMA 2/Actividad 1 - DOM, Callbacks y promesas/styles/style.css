@@ -1,0 +1,84 @@
+h1,
+p {
+  color: cornflowerblue;
+}
+
+div {
+  padding: 1vw;
+}
+
+button {
+  background-color: lightskyblue;
+  padding: 1vh;
+  font-weight: bold;
+  border-radius: 1vh;
+}
+
+input {
+  padding: 1vh;
+  background-color: lightcyan;
+  border-radius: 1vh;
+}
+
+#error {
+  color: red;
+}
+
+#resultado,
+#resultado p {
+  color: black;
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid darkcyan;
+  padding: 1vw;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#arrayCompras {
+  color: black;
+  font-weight: bold;
+}
+
+/* Clases para la tarjeta del Ejercicio 2 */
+.tarjetaObjeto {
+  border: 1px solid cornflowerblue;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightcyan;
+}
+
+.tarjetaObjeto h3 {
+  color: cornflowerblue;
+  margin: 5px 0;
+}
+
+.tarjetaObjeto p {
+  color: black;
+}
+
+.tarjetaObjeto .autor {
+  font-style: italic;
+}
+
+/* Clases para las filas del Ejercicio 3 (tipos de datos) */
+.filaNumero {
+  background-color: lightgreen;
+  color: darkgreen;
+}
+
+.filaAlfanumerico {
+  background-color: lightyellow;
+  color: goldenrod;
+}
+
+.filaTexto {
+  background-color: lightblue;
+  color: darkblue;
+}
