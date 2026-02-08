@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 4</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 4</h1>
+        <p>4 - Crea un script que mediante callback puedas realizar la suma, resta, multiplicación y división. El resultado y la operación deben de almacenarse en una tabla.</p>
+
+        <div id="wrapper">
+            <!-- Pedimos que introduzcan los números -->
+            <label for="numero1">Número 1: </label>
+            <input id="numero1" type="number" placeholder="Valor 1">
+            <br><br>
+
+            <label for="numero2">Número 2: </label>
+            <input id="numero2" type="number" placeholder="Valor 2">
+            <br><br>
+            
+            <!-- Botones para cada operación -->
+            <button onclick="ejecutarOperacion(sumar, 'Suma')" type="button">Sumar</button> 
+            <button onclick="ejecutarOperacion(restar, 'Resta')" type="button">Restar</button> 
+            <button onclick="ejecutarOperacion(multiplicar, 'Multiplicación')" type="button">Multiplicar</button> 
+            <button onclick="ejecutarOperacion(dividir, 'División')" type="button">Dividir</button> 
+
+            <p id="error"></p> <!-- En el caso de que haber errores se muestran aquí-->
+
+            <div id="resultado">
+                <!-- Aquí vamos a insertar la tabla -->
+                <table id="tablaResultados">
+                    <tr>
+                        <th>Operación</th>
+                        <th>Número 1</th>
+                        <th>Número 2</th>
+                        <th>Resultado</th>
+                    </tr>
+                </table>
+            </div> 
+        </div>
+    
+        <script src="./js/Ejercicio4.js"></script>
+    </body>
+</html> 
