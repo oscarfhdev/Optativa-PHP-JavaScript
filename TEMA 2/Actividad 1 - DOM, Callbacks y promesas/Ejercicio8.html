@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 8</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 8</h1>
+        <p>8 - Crea una clase u objeto producto, después crea un array de productos, crea una función que haciendo uso de las promesas te devuelva el valor del producto, o por el contrario, si el producto no está que te devuelva un error o un aviso.</p>
+
+        <div id="wrapper">
+            <!-- Pedimos que introduzcan el nombre del producto a buscar -->
+            <label for="inputProducto">Buscar producto: </label>
+            <input id="inputProducto" type="text" placeholder="Ej: Manzana">
+            <br><br>
+            
+            <!-- Botón para buscar el producto -->
+            <button onclick="buscarProducto()" type="button">Buscar</button> 
+
+            <p id="error"></p>
+
+            <div id="resultado">
+                <!-- Aquí se mostrará el resultado -->
+            </div> 
+
+            <br>
+            <h3>Productos disponibles:</h3>
+            <ul id="listaProductos">
+                <!-- Aquí se mostrarán los productos disponibles -->
+            </ul>
+        </div>
+    
+        <script src="./js/Ejercicio8.js"></script>
+    </body>
+</html> 
