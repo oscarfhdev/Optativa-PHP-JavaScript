@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 3</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 3</h1>
+        <p>3 - Crea una función que reciba una cadena de texto, después separe los elementos (palabras, numero...), los elementos tienen que estar separados por espacios, después crea una tabla con dichos elementos, y dependiendo del tipo que sea dale un color o estilo propios.</p>
+
+        <div id="wrapper">
+            <!-- Pedimos que introduzcan la cadena de texto -->
+            <label for="cadenaTexto">Introduce una cadena de texto: </label>
+            <input id="cadenaTexto" type="text" placeholder="Ej: Hola 123 Mundo 456">
+            <br><br>
+            
+            <!-- Botón para procesar la cadena -->
+            <button onclick="procesarCadena('cadenaTexto')" type="button">Procesar Cadena</button> 
+
+            <p id="error"></p> <!-- En el caso de que haber errores se muestran aquí-->
+
+            <div id="resultado">
+                <!-- Aquí vamos a insertar la tabla -->
+            </div> 
+        </div>
+    
+        <script src="./js/Ejercicio3.js"></script>
+    </body>
+</html> 
