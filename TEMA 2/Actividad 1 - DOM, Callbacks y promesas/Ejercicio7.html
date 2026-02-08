@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 7</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 7</h1>
+        <p>7 - Crea una promesa en la que introduzcas tu nombre, y 2 segundos después te salude por una salida (HTML, consola...).</p>
+
+        <div id="wrapper">
+            <!-- Pedimos que introduzcan el nombre -->
+            <label for="inputNombre">Introduce tu nombre: </label>
+            <input id="inputNombre" type="text" placeholder="Tu nombre">
+            <br><br>
+            
+            <!-- Botón para ejecutar el saludo -->
+            <button onclick="saludar()" type="button">Saludar</button> 
+
+            <p id="error"></p>
+
+            <div id="resultado">
+                <!-- Aquí se mostrará el saludo -->
+            </div> 
+        </div>
+    
+        <script src="./js/Ejercicio7.js"></script>
+    </body>
+</html> 
