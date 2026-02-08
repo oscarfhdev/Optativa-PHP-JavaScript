@@ -1,0 +1,23 @@
+Realiza los siguientes ejercicios de JavaScript (8.5 puntos) :
+
+1 - Realiza cambios pertinentes en el ejemplo DOM 3 para poder modificar el texto de la tarea con la entrada de datos que tenemos pulsando un botón (solamente tiene que cambiar la tarea que nosotros digamos). 
+
+2 - Crea un objeto tenga los siguientes campos: titulo, cuerpo y autor, después crea un formulario para rellenar los diferentes campos del objeto, después crea una función para crear el objeto con los datos introducidos en el formulario e incrústalo en el código html usando DOM, añade la función de borrar el objeto, cuando añadas un nuevo objeto no borres el anterior de la vista HTML.
+
+3 - Crea una función que reciba una cadena de texto, después separe los elementos (palabras, numero...), los elementos tienen que estar separados por espacios, despues crea una tabla con dichos elementos, y dependiendo del tipo que sea dale un color o estilo propios (ha decisión del alumno). 
+
+4 - Crea un script que mediante callback puedas realizar la suma, resta, multiplicación y división. El resultado y la operación deben de almacenarse en una tabla. Crea las entradas necesarias para comprobar que funciona.
+
+5 - Crea una función, que haciendo uso de las callbacks te devuelva si una cadena es numérica, alfabética o alfanumérica.
+
+6 - Utilizando promesas, crea una función que al inicio muestre por salida (html, terminal...) un mensaje de inicio de la función, después dentro de la promesa que muestre otro mensaje "Estoy dentro de la promesa" y 3 segundos después otro mensaje "Salí de la promesa". No puedes usar async ni await.
+
+7 - Crea una promesa en la que introduzcas tu nombre, y 2 segundos después te salude por una salida (HTML, consola...) (puedes usar la opción que prefieras).
+
+8 - Crea una clase u objeto producto, después crea un array de productos, crea una función que haciendo uso de las promesas te devuelva el valor del producto, o por el contrario, si el producto no esta que te devuelva un error o un aviso.
+
+
+Opcional (1,5 puntos).
+1 - Crea una función que encadene dos o mas promesas seguidas. (0.5)
+
+2 - Crea función, que recoja una cadena de operaciones matemáticas básicas (suma, resta, multiplicación y división) y paréntesis, y te devuelva el resultado de la cadena. (1)

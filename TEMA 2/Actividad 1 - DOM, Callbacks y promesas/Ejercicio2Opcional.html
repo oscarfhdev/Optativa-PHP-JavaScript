@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Ejercicio 2 Opcional</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 2 Opcional (+1.0 pts)</h1>
+        <p>Calculadora de cadenas que resuelva operaciones con paréntesis.</p>
+
+        <div id="wrapper">
+            <!-- Pedimos la operación -->
+            <label for="inputOperacion">Introduce una operación: </label>
+            <input id="inputOperacion" type="text" placeholder="Ej: (2+3)*4">
+            <br><br>
+            
+            <!-- Botón para calcular -->
+            <button onclick="calcular()" type="button">Calcular</button> 
+
+            <p id="error"></p>
+
+            <div id="resultado">
+                <!-- Aquí se mostrará el resultado -->
+            </div> 
+
+            <br>
+            <p><strong>Ejemplos de operaciones válidas:</strong></p>
+            <ul>
+                <li>2+3*4</li>
+                <li>(2+3)*4</li>
+                <li>10/(2+3)</li>
+                <li>((5+5)*2)/4</li>
+            </ul>
+        </div>
+    
+        <script src="./js/Ejercicio2Opcional.js"></script>
+    </body>
+</html> 
