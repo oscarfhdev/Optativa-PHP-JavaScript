@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Ejercicio 4</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 4</h1>
+        <p>4 - Crea un script que almacene un cronometro en memoria local, debe tener las siguientes opciones, iniciar/reanudar, parar y borrar.</p>
+
+        <!-- Tarjeta donde se muestra el cronómetro y los botones de control -->
+        <div class="tarjetaObjeto" style="text-align: center; max-width: 400px;">
+            <!-- Aquí se muestra el tiempo formateado -->
+            <h1 id="tiempoDisplay" style="font-size: 3em; color: black; margin: 20px 0;">00:00:00</h1>
+            
+            <!-- Botones que llaman a las funciones del cronómetro -->
+            <button onclick="iniciarCronometro()">Iniciar / Reanudar</button>
+            <button onclick="pararCronometro()">Parar</button>
+            <button onclick="borrarCronometro()">Borrar</button>
+        </div>
+    
+        <script src="js/ejercicio4.js"></script>
+    </body>
+</html>
