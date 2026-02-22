@@ -1,0 +1,70 @@
+/* ---- TEMA CLARO (Default en style.css) ---- */
+body.tema-claro {
+    background-color: white;
+}
+
+/* ---- TEMA OSCURO ---- */
+body.tema-oscuro {
+    background-color: #333333;
+    color: #f5f5f5;
+}
+
+body.tema-oscuro h1,
+body.tema-oscuro h2,
+body.tema-oscuro p,
+body.tema-oscuro label {
+    color: #f5f5f5;
+}
+
+body.tema-oscuro .tarjetaObjeto {
+    background-color: #4d4d4d;
+    border-color: #888888;
+}
+
+body.tema-oscuro .tarjetaObjeto p,
+body.tema-oscuro .tarjetaObjeto .autor {
+    color: #dddddd;
+}
+
+body.tema-oscuro .tarjetaObjeto h3 {
+    color: lightskyblue;
+}
+
+body.tema-oscuro button {
+    background-color: #555;
+    color: white;
+    border: 1px solid #777;
+}
+
+/* ---- TEMA ALTO CONTRASTE ---- */
+body.tema-contraste {
+    background-color: #000000;
+    color: #00ff00;
+}
+
+body.tema-contraste h1,
+body.tema-contraste h2,
+body.tema-contraste p,
+body.tema-contraste label {
+    color: #00ff00;
+}
+
+body.tema-contraste .tarjetaObjeto {
+    background-color: #000000;
+    border: 2px solid #00ff00;
+}
+
+body.tema-contraste .tarjetaObjeto p,
+body.tema-contraste .tarjetaObjeto .autor {
+    color: #00ff00;
+}
+
+body.tema-contraste .tarjetaObjeto h3 {
+    color: #ffff00;
+}
+
+body.tema-contraste button {
+    background-color: #000000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+}

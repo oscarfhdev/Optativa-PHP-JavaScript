@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Hoja de estilos base y la de los temas -->
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/temas.css">
+        <title>Ejercicio 6</title>
+    </head>
+
+    <!-- El body empieza con la clase tema-claro por defecto -->
+    <body id="cuerpoPagina" class="tema-claro">
+
+        <h1>Ejercicio 6</h1>
+        <p>6 - Crea una pagina que tenga varios estilos, y que con algún elementos puedas cambiar dichos estilos, el tema o estilo se debe guardar en memoria local y cuando se inicie la pagina tiene que leer dicha información y mostrar la pagina con la configuración seleccionada.</p>
+
+        <!-- Selector desplegable para cambiar el tema -->
+        <label for="selectorTema"><b>Elige el tema:</b> </label>
+        <select id="selectorTema" onchange="cambiarTema()">
+            <option value="tema-claro">Tema Claro (Defecto)</option>
+            <option value="tema-oscuro">Tema Oscuro</option>
+            <option value="tema-contraste">Tema Alto Contraste</option>
+        </select>
+
+        <!-- Tarjeta de prueba para ver los cambios de estilo -->
+        <div class="tarjetaObjeto" style="max-width: 400px; margin-top:20px;">
+            <h3>Contenido de prueba</h3>
+            <p class="autor">Comprueba cómo cambian los colores al cambiar el tema.</p>
+            <p>Los botones, fondos y textos se adaptan al tema seleccionado.</p>
+            <button style="margin-top: 10px;">Botón de prueba</button>
+        </div>
+    
+        <script src="js/ejercicio6.js"></script>
+    </body>
+</html>
