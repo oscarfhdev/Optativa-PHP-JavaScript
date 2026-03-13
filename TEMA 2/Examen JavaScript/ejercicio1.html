@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Productos XML</title>
+<body>
+
+    <h1>Catálogo de Productos</h1>
+
+    <label for="filtro-categoria">Filtrar por categoría:</label>
+    <select id="filtro-categoria" onchange="filtrarProductos(this.value)">
+        <option value="todos">Mostrar todos</option>
+        <option value="Alimentos">Alimentos</option>
+        <option value="Bebidas">Bebida</option>
+        <option value="Limpieza">Limpieza</option>
+        <option value="Higiene">Higiene</option>
+    
+    </select>
+
+    <hr>
+
+    <div id="contenedor-productos">
+        </div>
+
+    <script src="./js/ejercicio1.js"></script>
+
+</body>
+</html>
