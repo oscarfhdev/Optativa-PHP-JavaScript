@@ -1,0 +1,11 @@
+1. Crea un formulario que lea una cadena de caracteres, después crea una función para comprobar si la cadena es un palíndromo (se lee igual en ambos sentidos, por ejemplo, Ana o Acaso hubo búhos aca) o no.
+
+2. Crea un formulario que reciba un número, a continuación, crea una función recursiva que calcule el número de Fibonacci hasta dicha posición, la función recibirá el número y un vector, en el vector se almacenaran los numero de la secuencia, después imprímelos.
+
+3. Muestra un texto por pantalla, después crea un formulario que reciba una palabra, crea una función que cuente cuantas veces aparece la palabra en el texto, el texto es fijo y lo elige el alumno.
+
+4. Crea un programa que imprima por pantalla los números primos comprendidos entre el 1 y el 100 (el número 1 no cuenta) en una tabla. Debes generar un vector denominado primos que los almacene. Los números primos han de obtenerse mediante algorítmica.
+
+5. Crea un array con diferentes elementos, después crea un formulario que introduzca el nombre de uno de los elementos y este se elimine del vector.
+
+6. Genera un vector con 20 números generados aleatoriamente, después muéstralo por pantalla, por ultimo crea una función que reciba un vector por argumentos y esta lo devuelva ordenado de menor a mayor, por ultimo muestra el vector ordenado.
