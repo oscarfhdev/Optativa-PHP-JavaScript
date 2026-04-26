@@ -1,0 +1,31 @@
+1. Crea una página que pida los datos personales mediante un formulario:
+    - Nombre y apellidos.
+    - Teléfono.
+    - DNI
+Después en la misma página o en otra diferente (a elección del alumno), debe realizar las siguientes funcionalidades:
+    - Comprobar si el nombre y apellidos son correctos (no pueden contener caracteres numéricos)
+    - El teléfono tiene que tener 9 cifras o empezar por un prefijo +XX seguido de un espacio y 9 cifras
+    - El DNI tiene que ser válido, tiene que tener 8 cifras y una letra. Para que un DNI sea válido tienes que hallar el módulo de 23 del número de 8 cifras y comprobarlo con la siguiente tabla.
+
++----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+| 0  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 |
++----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+| T  | R  | W  | A  | G  | M  | Y  | F  | P  | D  | X  | B  | N  | J  | Z  | S  | Q  | V  | H  | L  | C  | K  | E  |
++----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+
+
+2. Crea una página que cree un numero aleatorio entre el 00000 y 99999 cuando la página cargue por primera vez, como en la lotería, el usuario debe intentar adivinar el numero generado.
+
+    2.1. Extra intenta implementar la siguiente función: cuando una cifra coincida, el programa tiene que indicar que posiciones a adivinado el usuario y decírselo, tiene 7 intentos para adivinar el número. Tienes que intentar mantener el numero entre recargas.
+
+
+3. Crea una función recursiva que reciba un número y devuelva su factorial.
+
+4. Crea un array de productos (un array asociativo), el array tiene los siguientes elementos:
+    - Nombre y coste (clave -> valor)
+Crea varios formularios para añadir, borrar o consultar un producto del array:
+    - Si intentas añadir un producto que ya existe te mostrara un error.
+    - Si intentas borrar un producto que no existe te saldrá un error.
+    - Si consultas un producto que no existe te saldrá un error.
+
+Si se recarga la pagina el vector vuelve a su valor original, solamente tienes que saber introducir, borrar y buscar elementos.
